@@ -1,0 +1,6 @@
+#!/bin/bash
+
+cd ../
+rm -rf doc
+mkdir doc
+javadoc ../src/ru/ifmo/ctddev/chekmenev/iterativeparallelism/IterativeParallelism.java -classpath "../artifacts/IterativeParallelismTest.jar:../artifacts/ParallelMapperTest.jar" -d doc -private -linkoffline http://docs.oracle.com/javase/8/docs/api/ http://docs.oracle.com/javase/8/docs/api/

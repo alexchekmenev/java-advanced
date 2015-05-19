@@ -1,0 +1,10 @@
+#!/bin/bash
+
+cd ../
+rm -rf bin
+mkdir bin
+cp out/production/java-advanced/ru bin -r
+cp META-INF/ bin -r
+cp artifacts/ImplementorTest.jar bin -r
+cd bin
+jar cfm Implementor.jar META-INF/MANIFEST.MF ru
